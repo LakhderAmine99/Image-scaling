@@ -1,2 +1,2 @@
-### Nearest-neighbor-interpolation
+## Nearest-neighbor-interpolation
 Image scaling algorithm
