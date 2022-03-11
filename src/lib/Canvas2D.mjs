@@ -7,7 +7,6 @@ export default class Canvas2D {
      * @param {integer} height 
      */
     constructor(canvas){
-
         this.canvas = canvas || new HTMLCanvasElement();
     };
 
