@@ -7,6 +7,7 @@ export default class Canvas2D {
      * @param {integer} height 
      */
     constructor(canvas){
+
         this.canvas = canvas || new HTMLCanvasElement();
     };
 
@@ -25,6 +26,14 @@ export default class Canvas2D {
     setHeight(height){
         this.canvas.height = height;
     };
+
+    getDim(dimension){
+
+        switch(dimension){
+            case 1:return this.canvas.width;
+            case 2:return this.canvas.height;
+        }
+    }
 
     /**
      * 

@@ -9,7 +9,6 @@
 
 main
 {
-    height: 650px;
     width: 100%;
 }
 
@@ -25,8 +24,20 @@ footer
     background-color: black;
 }
 
+#app
+{
+    
+}
+
+.NNI-widget
+{
+    /* width: 50%; */
+    width: 800px;
+}
+
 canvas
 {
     /* background-color: blueviolet; */
     width: 100% !important;
+    margin: 0 1rem;
 }

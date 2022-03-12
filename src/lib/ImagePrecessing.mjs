@@ -1,8 +1,8 @@
-import NNI from "./NNI.mjs";
+import ImageScaling from "./ImageScaling.mjs";
 
 export default class ImageProcessing {
 
-    #NNI = null;
+    #IS = null;
 
     /**
      * 
@@ -13,8 +13,8 @@ export default class ImageProcessing {
     };
 
     NNI(){
-        this.#NNI = new NNI(this.imageData);
-        return this.#NNI.NearestNeighborsInterpolation();
+        this.#IS = new ImageScaling(this.imageData);
+        return this.#IS.NearestNeighborsInterpolation();
     };
 
 };
