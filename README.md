@@ -1,1 +1,2 @@
 ### Image Scaling 
+## algorithms
