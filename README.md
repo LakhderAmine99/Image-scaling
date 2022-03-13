@@ -1,3 +1,3 @@
-## Image Scaling
+# Image Scaling
 
 - Nearest Neghibors Algorithm
