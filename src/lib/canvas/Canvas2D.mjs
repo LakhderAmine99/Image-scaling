@@ -71,6 +71,8 @@ export default class Canvas2D {
      * @returns {CanvasRenderingContext2D} CanvasRenderingContext2D  
      */
     putImageData(imageData){
+        this.setWidth(imageData.width);
+        this.setHeight(imageData.height);
         this.getContext().putImageData(imageData,0,0);
         return this.getContext();
     };

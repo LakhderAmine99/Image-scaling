@@ -1,5 +1,5 @@
-import Canvas2D from "../src/lib/Canvas2D.mjs";
-import ImageProcessing from "../src/lib/ImagePrecessing.mjs";
+import Canvas2D from "../src/lib/canvas/Canvas2D.mjs";
+import ImageProcessing from "../src/lib/root/ImagePrecessing.mjs";
 
 function NearestNeighborsInterpolation(){
 
@@ -19,7 +19,7 @@ function NearestNeighborsInterpolation(){
         
         btn.addEventListener('click',(e)=>{
             
-            imageProcessing = new ImageProcessing(resultCanvas2d.getImageData());
+            imageProcessing = new ImageProcessing(canvas2d.getImageData());
             resultCanvas2d.putImageData(imageProcessing.NNI()); 
 
         },false);
@@ -27,9 +27,7 @@ function NearestNeighborsInterpolation(){
 
     function loadImageData(){
 
-        image.src = "../assets/images/test.png";
-        image.width = 658;
-        image.height = 658;
+        image.src = "../assets/images/riz.jpg";
 
         image.onload = function(){
             console.log("image data loaded.");

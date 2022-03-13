@@ -1,4 +1,4 @@
-import ImageScaling from "./ImageScaling.mjs";
+import ImageScaling from "../image_scaling/ImageScaling.mjs";
 
 export default class ImageProcessing {
 

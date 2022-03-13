@@ -10,6 +10,7 @@
 main
 {
     width: 100%;
+    height: 100%;
 }
 
 header
@@ -26,18 +27,18 @@ footer
 
 #app
 {
-    
+    /* height: 100vh; */
 }
 
 .NNI-widget
 {
     /* width: 50%; */
-    width: 800px;
+    /* width: 800px; */
 }
 
 canvas
 {
     /* background-color: blueviolet; */
     width: 100% !important;
-    margin: 0 1rem;
+    margin: 0rem 1rem;
 }
