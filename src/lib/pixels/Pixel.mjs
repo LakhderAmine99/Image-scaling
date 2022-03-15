@@ -37,7 +37,9 @@ export default class Pixel{
     };
     
     static pos2index(){  
-    
+        /**
+        *
+        */
     };
     
     static index2pos(){  
