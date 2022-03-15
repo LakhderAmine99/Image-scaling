@@ -55,6 +55,8 @@ export default class Pixel{
     };
     
     static setPixelByIndex(){
-    
+        /**
+        *
+        */
     };
 };
