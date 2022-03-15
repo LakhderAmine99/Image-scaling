@@ -43,7 +43,9 @@ export default class Pixel{
     };
     
     static index2pos(){  
-    
+        /**
+        *
+        */
     };
     
     static getPixelByIndex(){
