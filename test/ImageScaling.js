@@ -13,7 +13,7 @@ function NearestNeighborsInterpolation(){
 
     this.start = function(){  
 
-        console.log("runing the app...");
+        console.log("runing the app..");
 
         loadImageData();
         
