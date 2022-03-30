@@ -1,4 +1,4 @@
-##### Image Scaling
+## Image Scaling
 
 - Nearest Neghibors Algorithm
 - Linear Interpolation
