@@ -10,10 +10,10 @@ export default class ImageProcessing {
      */
     constructor(imageData){
         this.imageData = imageData;
+        this.#IS = new ImageScaling(this.imageData);
     };
 
     NNI(){
-        this.#IS = new ImageScaling(this.imageData);
         return this.#IS.NearestNeighborsInterpolation();
     };
 
