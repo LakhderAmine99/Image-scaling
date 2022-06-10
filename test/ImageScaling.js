@@ -16,18 +16,22 @@ function NearestNeighborsInterpolation(){
         console.log("runing the app...");
 
         loadImageData();
-        
+
         btn.addEventListener('click',(e)=>{
             
             imageProcessing = new ImageProcessing(canvas2d.getImageData());
-            resultCanvas2d.putImageData(imageProcessing.NNI()); 
+            resultCanvas2d.putImageData(imageProcessing.LERP()); 
+
 
         },false);
     };
 
+    /**
+     * @description Loading the image and draw it into the canvas.
+     */
     function loadImageData(){
 
-        image.src = "../assets/images/riz.jpg";
+        image.src = "../assets/images/plage.jpg";
 
         image.onload = function(){
             console.log("image data loaded.");
