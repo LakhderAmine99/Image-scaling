@@ -1,3 +1,6 @@
+/**
+ * @description Canvas2D class for manipulationg the htmlcanvaselement 
+ */
 export default class Canvas2D {
 
     /**
@@ -7,7 +10,6 @@ export default class Canvas2D {
      * @param {integer} height 
      */
     constructor(canvas){
-
         this.canvas = canvas || new HTMLCanvasElement();
     };
 
@@ -27,8 +29,13 @@ export default class Canvas2D {
         this.canvas.height = height;
     };
 
+    /**
+     * 
+     * @param {number} dimension 
+     * @returns {Integer} Canvas dimensions
+     * @description 1 for getting the width of the canvas , 0 for the height
+     */
     getDim(dimension){
-
         switch(dimension){
             case 1:return this.canvas.width;
             case 2:return this.canvas.height;
@@ -37,7 +44,7 @@ export default class Canvas2D {
 
     /**
      * 
-     * @returns
+     * @returns {CanvasRenderingContext2D} 
      */
     getContext(){
         return this.canvas.getContext("2d");
