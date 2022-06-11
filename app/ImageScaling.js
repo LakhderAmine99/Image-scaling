@@ -20,7 +20,7 @@ function NearestNeighborsInterpolation(){
         btn.addEventListener('click',(e)=>{
             
             imageProcessing = new ImageProcessing(canvas2d.getImageData());
-            resultCanvas2d.putImageData(imageProcessing.LERP()); 
+            resultCanvas2d.putImageData(imageProcessing.NNI()); 
 
 
         },false);
