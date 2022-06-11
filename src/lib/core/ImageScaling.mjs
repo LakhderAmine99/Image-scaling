@@ -1,4 +1,4 @@
-import MathHelper from "../Math/MathHelper.mjs";
+import MathHelper from "../math/MathHelper.mjs";
 
 /**
  * @namespace {ImageProcessing}
