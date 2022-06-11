@@ -30,19 +30,21 @@ footer
 
 #app
 {
-
+    background-color: rgba(0, 0, 0, 0.768);
 }
 
 .NNI-widget
 {
-
+    height: 500px;
     margin: 1.5rem 0;
     padding: 2.5rem;
+    width: 100%;
     overflow: auto;
+    text-align: center;
 }
 
 canvas
 {
-    width: 100% !important;
-    margin: 0rem 1rem;
+    /* width: 50% !important; */
+    margin: 1rem;
 }

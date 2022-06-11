@@ -1,4 +1,5 @@
 /**
+ * @class
  * @description Canvas2D class for manipulationg the htmlcanvaselement 
  */
 export default class Canvas2D {

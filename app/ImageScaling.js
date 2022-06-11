@@ -1,11 +1,12 @@
 import Canvas2D from "../src/lib/canvas/Canvas2D.mjs";
 import ImageProcessing from "../src/lib/root/ImagePrecessing.mjs";
 
-function NearestNeighborsInterpolation(){
+function ImageScalingDemo(){
 
     let canvas = document.querySelector('canvas');
     let finalCanvas = document.querySelector('#result-canvas');
     let btn = document.getElementById('nni');
+    let scale = document.getElementById('scale');
     let image = new Image();
     let imageProcessing = null;
     let canvas2d = new Canvas2D(canvas);;
@@ -15,19 +16,23 @@ function NearestNeighborsInterpolation(){
 
         console.log("runing the app...");
 
+        let valueOfScale = parseInt(scale.value);
+
         loadImageData();
 
         btn.addEventListener('click',(e)=>{
+
+            valueOfScale = parseInt(scale.value);
             
             imageProcessing = new ImageProcessing(canvas2d.getImageData());
-            resultCanvas2d.putImageData(imageProcessing.NNI()); 
-
+            resultCanvas2d.putImageData(imageProcessing.NNI(valueOfScale)); 
 
         },false);
     };
 
     /**
      * @description Loading the image and draw it into the canvas.
+     * 
      */
     function loadImageData(){
 
@@ -60,7 +65,7 @@ function NearestNeighborsInterpolation(){
 const setup = () => {
 
     window.onload = () => {
-        window.app = new NearestNeighborsInterpolation();
+        window.app = new ImageScalingDemo();
         window.app.start();
     }
 };
