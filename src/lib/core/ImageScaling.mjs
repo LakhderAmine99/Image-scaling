@@ -1,7 +1,8 @@
 import MathHelper from "../math/MathHelper.mjs";
 
 /**
- * @namespace {ImageProcessing}
+ * @namespace {ImageScaling}
+ * @class
  * 
  */
 

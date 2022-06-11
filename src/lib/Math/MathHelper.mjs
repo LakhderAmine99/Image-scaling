@@ -1,3 +1,8 @@
+/**
+ * @namespace {Math}
+ * @class
+ * 
+ */
 export default class MathHelper {
 
     /**
