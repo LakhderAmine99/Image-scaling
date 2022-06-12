@@ -5,7 +5,6 @@ function ImageScalingDemo(){
 
     let canvas = document.querySelector('canvas');
     let finalCanvas = document.querySelector('#result-canvas');
-    let btn = document.getElementById('nni');
     let scale = document.getElementById('scale');
     let image = new Image();
     let imageProcessing = null;
@@ -20,7 +19,7 @@ function ImageScalingDemo(){
 
         loadImageData();
 
-        btn.addEventListener('click',(e)=>{
+        scale.addEventListener('mousemove',(e)=>{
 
             valueOfScale = parseInt(scale.value);
             
@@ -28,6 +27,7 @@ function ImageScalingDemo(){
             resultCanvas2d.putImageData(imageProcessing.NNI(valueOfScale)); 
 
         },false);
+
     };
 
     /**

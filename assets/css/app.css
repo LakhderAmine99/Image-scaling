@@ -2,11 +2,6 @@
 @import url('layouts.css');
 @import url('responsive-design.css');
 
-/* #app
-{
-    height: 100vh;
-} */
-
 main
 {
     width: 100%;
@@ -30,7 +25,7 @@ footer
 
 #app
 {
-    background-color: rgba(0, 0, 0, 0.768);
+
 }
 
 .NNI-widget
